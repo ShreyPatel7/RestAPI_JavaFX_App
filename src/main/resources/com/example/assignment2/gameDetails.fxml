@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.GameDetailsController" prefWidth="800" prefHeight="600" styleClass="game-details-pane">
+    <VBox spacing="10" alignment="CENTER" prefWidth="780" layoutX="10" layoutY="10">
+        <Label fx:id="gameNameLabel" styleClass="header-label" />
+        <GridPane vgap="5">
+
+            <Label text="Rating:" styleClass="content-label" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="ratingLabel" styleClass="content-text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Slug:" styleClass="content-label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="slugLabel" styleClass="content-text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Release Date:" styleClass="content-label" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label fx:id="releaseDateLabel" styleClass="content-text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="URL:" styleClass="content-label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label fx:id="urlLabel" styleClass="content-text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        </GridPane>
+
+        <Label text="Summary:" styleClass="content-label" />
+        <Label fx:id="summaryLabel" wrapText="true" prefWidth="780" styleClass="content-text" />
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="backButton" text="Go Back" onAction="#goBack" styleClass="content-button" />
+            <Button fx:id="homeButton" text="Go Home" onAction="#goHome" styleClass="content-button" />
+        </HBox>
+    </VBox>
+    <stylesheets>
+        <URL value="@/style.css" />
+    </stylesheets>
+</AnchorPane>

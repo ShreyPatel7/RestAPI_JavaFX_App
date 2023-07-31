@@ -1,0 +1,151 @@
+.root {
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.home-pane {
+    -fx-background-color: #f5f5f5;
+}
+
+#searchResults {
+    -fx-font-size: 16px;
+}
+
+#searchResults .list-cell {
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#searchResults .list-cell:even {
+    -fx-background-color: #f0f0f0;
+}
+
+#searchResults .list-cell:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0, 0, 3);
+    -fx-transition: background-color 0.2s;
+}
+
+#searchResults .list-cell:selected {
+    -fx-background-color: #007bff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0, 0, 3);
+    -fx-transition: background-color 0.2s;
+}
+
+#searchResults .list-cell:selected .game-name-label {
+    -fx-text-fill: white;
+}
+
+#searchResults .list-cell .game-name-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007bff;
+}
+
+#searchResults .list-cell .game-details-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #444444;
+}
+
+#searchResults .list-cell .game-release-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #007bff;
+}
+
+#searchResults .list-cell .game-genre-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #007bff;
+}
+
+#searchInput {
+    -fx-prompt-text-fill: #888888;
+    -fx-background-color: #f8f8f8;
+    -fx-text-fill: #444444;
+}
+
+#searchButton {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+}
+
+#searchButton:hover {
+    -fx-background-color: #0056b3;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0, 0, 3);
+}
+
+#gameNameLabel {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #444444;
+}
+
+#genreLabel,
+#ratingLabel,
+#slugLabel,
+#releaseDateLabel,
+#urlLabel,
+#summaryLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #444444;
+}
+
+#backButton,
+#homeButton {
+    -fx-font-size: 18px;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+}
+
+#backButton:hover,
+#homeButton:hover {
+    -fx-background-color: #0056b3;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0, 0, 3);
+}
+
+.game-details-pane {
+    -fx-background-color: #f5f5f5;
+}
+
+.content-container {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-transition: background-color 0.3s ease;
+}
+
+.content-container:hover {
+    -fx-background-color: #f9f9f9;
+    -fx-cursor: hand;
+}
+
+.content-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007bff;
+}
+
+.content-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #444444;
+    -fx-padding: 5px 0;
+}
+
+.content-button {
+    -fx-font-size: 20px;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+}
+
+.content-button:hover {
+    -fx-background-color: #0056b3;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0, 0, 3);
+}
